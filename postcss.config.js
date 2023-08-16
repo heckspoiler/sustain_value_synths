@@ -1,9 +1,6 @@
 module.exports = {
-  purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false,
-  theme: {
-    extend: {},
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   },
-  variants: {},
-  plugins: [require("tailwindcss"), require("autoprefixer")],
 };
