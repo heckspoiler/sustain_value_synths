@@ -35,6 +35,12 @@
       --blue-color: #035DFF;
 }
 
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
 /* general button styling */
 
 button {
