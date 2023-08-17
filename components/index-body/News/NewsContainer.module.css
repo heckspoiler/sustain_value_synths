@@ -1,0 +1,6 @@
+.news-container {
+      width: 80vw;
+      height: calc(20rem + 10vw);
+      border: 1px solid black;
+      margin: auto;
+}

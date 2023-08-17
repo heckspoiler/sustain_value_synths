@@ -9,3 +9,5 @@ const NewsContainer = () => {
     </section>
   );
 };
+
+export default NewsContainer;
