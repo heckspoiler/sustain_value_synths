@@ -50,7 +50,8 @@ button {
 }
 
 body {
-      font-family: "BDO Grotesk"
+      font-family: "BDO Grotesk";
+      overflow-x: hidden;
 }
 
 button:hover {
@@ -71,12 +72,15 @@ h1 {
       font-weight: 700;
       font-size: 6rem;
       color: var(--blue-color);
+      text-align: left;
 }
 
 
-
+.rainbow {
+      scale: 0.55;
+}
 
 header {
-      font-family: "Archivo";
+      font-family: "Clash";
       font-weight: 600;
 }
