@@ -32,9 +32,9 @@ const Background = () => {
       />
 
       <img
-        src="/images/rainbow.png"
+        src="/images/rainbow-piano.png"
         alt="thingy"
-        className="h-100 w-100 absolute top-0 left-40 mt-10 ml-60 scale-80 rainbow drop-shadow-lg"
+        className="h-100 w-100 absolute top-0 left-80 mt-16 ml-80 rainbow drop-shadow-lg"
       />
     </div>
   );
