@@ -24,9 +24,10 @@
 }
 
 @font-face {
-      font-family: "Mabry Pro Bold";
-      src: url("../assets/fonts/MabryPro-Bold.ttf");
+      font-family: "Anti Design";
+      src: url("../assets/fonts/anti-design-endavour.woff");
 }
+
 
 
 :root {
@@ -69,7 +70,7 @@ button:active {
 
 h1 {
       font-family: "Clash";
-      font-weight: 700;
+      font-weight: 600;
       font-size: 6rem;
       color: var(--blue-color);
       text-align: left;
@@ -83,6 +84,10 @@ h2 {
 
 }
 
+.shape,
+.sound {
+      font-family: "Anti Design";
+}
 
 .rainbow {
       scale: 0.9;
