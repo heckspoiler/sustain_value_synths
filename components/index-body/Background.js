@@ -2,12 +2,6 @@ const Background = () => {
   return (
     <div>
       <img
-        src="/icons/landing_icons/blob.svg"
-        alt="blob"
-        className="h-100 w-100 absolute top-0 left-0"
-      />
-
-      <img
         src="/icons/landing_icons/thingy.svg"
         alt="thingy"
         className="h-8 w-8 absolute top-0 left-0 mt-80 ml-80 rotate-45"

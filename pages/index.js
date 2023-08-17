@@ -1,4 +1,5 @@
 import Background from "../components/index-body/Background";
+import News from "../components/index-body/News";
 
 function Home() {
   return (
@@ -7,6 +8,7 @@ function Home() {
       <h1 className="text-7xl text-blue-main w-96 ml-20 text-shadow-lg pt-28 pl-20 text-left z-10">
         VINTAGE IN SHAPE AND SOUND!
       </h1>
+      <News />
     </div>
   );
 }
