@@ -1,6 +1,6 @@
 import styles from "./NewsContainer.module.css";
 import NewsItem from "./NewsItem";
-import { fetchProducts } from "../lib/shopify";
+import { fetchProducts } from "/lib/shopify";
 import { useEffect, useState } from "react";
 
 const NewsContainer = () => {
@@ -10,9 +10,10 @@ const NewsContainer = () => {
     const getProducts = async () => {
       try {
         const result = await fetchProducts();
+        console.log("Received products:", result);
         setProducts(result);
       } catch (error) {
-        console.log(error);
+        console.log("This motherfucker error:", error);
       }
     };
 

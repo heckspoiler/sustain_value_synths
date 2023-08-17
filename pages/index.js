@@ -7,8 +7,8 @@ function Home() {
       <Background />
       <h1 className="text-7xl text-blue-main w-96 ml-20 text-shadow-lg pt-28 pl-20 text-left z-10 drop-shadow-lg">
         VINTAGE IN <br />
-        <span class="shape">SHAPE</span> AND <br />
-        <span class="sound">SOUND</span>!
+        <span className="shape">SHAPE</span> AND <br />
+        <span className="sound">SOUND</span>!
       </h1>
       <News />
     </div>
