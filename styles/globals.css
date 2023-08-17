@@ -29,7 +29,11 @@
 }
 
 
-
+:root {
+      --yellow-color: #FFF460;
+      --pink-color: #FFB4CE;
+      --blue-color: #035DFF;
+}
 
 /* general button styling */
 
@@ -59,7 +63,8 @@ button:active {
 h1 {
       font-family: "Clash";
       font-weight: 700;
-      font-size: 3rem;
+      font-size: 6rem;
+      color: var(--blue-color);
 }
 
 
