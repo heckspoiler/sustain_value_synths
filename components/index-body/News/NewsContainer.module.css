@@ -1,6 +1,9 @@
 .news-container {
       width: 80vw;
       height: calc(20rem + 10vw);
-      border: 1px solid black;
       margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      gap: 20px;
 }

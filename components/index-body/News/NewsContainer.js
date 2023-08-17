@@ -1,11 +1,12 @@
 import styles from "./NewsContainer.module.css";
+import NewsItem from "./NewsItem";
 
 const NewsContainer = () => {
   return (
     <section className={styles["news-container"]}>
-      <div className={styles["news-item"]}></div>
-      <div className={styles["news-item"]}></div>
-      <div className={styles["news-item"]}></div>
+      <NewsItem />
+      <NewsItem />
+      <NewsItem />
     </section>
   );
 };
