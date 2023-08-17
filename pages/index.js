@@ -1,7 +1,9 @@
 import Background from "../components/index-body/Background";
 import News from "../components/index-body/News/News";
+import commerce from "../lib/commerce";
 
-function Home() {
+export default function Home({ products }) {
+  console.log(products);
   return (
     <div className="bg-pink-main h-screen pt-20">
       <Background />
@@ -10,9 +12,16 @@ function Home() {
         <span className="shape">SHAPE</span> AND <br />
         <span className="sound">SOUND</span>!
       </h1>
-      <News />
+      <News products={products} />
     </div>
   );
 }
 
-export default Home;
+export async function getServerSideProps() {
+  const { data: products } = await commerce.products.list();
+  return {
+    props: {
+      products,
+    },
+  };
+}
