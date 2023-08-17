@@ -1,5 +1,25 @@
 .news-item {
-      border: 1px solid black;
-      width: 100%;
-      height: 75%;
+      width: 20rem;
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+}
+
+.news-item img {
+      height: calc(6rem + 8vw);
+      width: calc(6rem + 8vw);
+
+}
+
+.news-item p {
+      color: black;
+
+}
+
+
+.news-item button:hover {
+      background-color: var(--pink-color)
 }
