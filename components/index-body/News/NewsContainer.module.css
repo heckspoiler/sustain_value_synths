@@ -4,6 +4,36 @@
       margin: auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+
       align-items: center;
-      gap: 20px;
+}
+
+.newsItem {
+      width: 21.5rem;
+      height: 21.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+}
+
+.newsItem img {
+      height: calc(6rem + 8vw);
+      width: calc(6rem + 8vw);
+
+}
+
+.newsItem p {
+      color: black;
+      font-size: 0.8rem;
+
+}
+
+.newsItem button {
+      font-size: 0.8rem;
+}
+
+.newsItem button:hover {
+      background-color: var(--pink-color)
 }
