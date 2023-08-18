@@ -14,7 +14,7 @@ export async function getStaticProps() {
 export default function Products({ products }) {
   return (
     <div className="mt-36">
-      <h2 className="mt-20">For sale right now!</h2>
+      <h2 className="mt-20 ml-12">For sale right now!</h2>
       <ProductList products={products} />
     </div>
   );
