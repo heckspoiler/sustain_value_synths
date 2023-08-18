@@ -1,0 +1,23 @@
+.background {
+      margin-top: -20px;
+      position: relative;
+      /* Add this */
+      animation: float 6s ease-in-out infinite;
+      /* Add infinite if you want it to repeat */
+}
+
+
+
+@keyframes float {
+      0% {
+            top: 0;
+      }
+
+      50% {
+            top: 2%;
+      }
+
+      100% {
+            top: 0%;
+      }
+}

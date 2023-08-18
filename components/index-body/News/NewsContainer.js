@@ -6,9 +6,9 @@ const NewsContainer = ({ products }) => {
   if (!products) return null;
 
   return (
-    <li className={styles["news-container"]}>
-      {products.map((product) => (
-        <ul key={product.permalink} className={styles.newsItem}>
+    <ul className={styles["news-container"]}>
+      {products.slice(0, 3).map((product) => (
+        <li key={product.permalink} className={styles.newsItem}>
           <Link href={`/products/${product.permalink}`}>
             <img src={product.image.url} alt={product.name} />
           </Link>
@@ -17,9 +17,9 @@ const NewsContainer = ({ products }) => {
           <Link href={`/products/${product.permalink}`}>
             <button>Info</button>
           </Link>
-        </ul>
+        </li>
       ))}
-    </li>
+    </ul>
   );
 };
 

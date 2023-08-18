@@ -1,10 +1,12 @@
+import styles from "./Background.module.css";
+
 const Background = () => {
   return (
-    <div>
+    <div className={styles.background}>
       <img
         src="/icons/landing_icons/thingy.svg"
         alt="thingy"
-        className="h-8 w-8 absolute top-0 left-0 mt-80 ml-80 rotate-45 drop-shadow-lg"
+        className={`${styles.thingy1} h-8 w-8 absolute top-0 left-0 mt-80 ml-80 rotate-45 drop-shadow-lg`}
       />
 
       <img
