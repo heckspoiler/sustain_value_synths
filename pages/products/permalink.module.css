@@ -1,0 +1,48 @@
+.productContainer {
+      margin-top: 8rem;
+      height: 100%;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+}
+
+.productInformation {
+      display: flex;
+      padding: 2rem;
+      gap: 5rem;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+}
+
+.productContainer img {
+      height: calc(6rem + 23vw);
+      width: calc(6rem + 23vw);
+
+}
+
+.productDescription {
+
+      height: calc(6rem + 23vw);
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+}
+
+.productDescription h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+}
+
+.productDescription button {
+      height: 3rem;
+      width: calc(5rem + 10vw);
+
+}
+
+.productDescription button:hover {
+      background-color: var(--yellow-color)
+}

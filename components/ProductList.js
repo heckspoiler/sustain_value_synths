@@ -14,12 +14,13 @@ export default function ProductList({ products }) {
           </Link>
           <h3>{product.name}</h3>
           <p>{product.price.formatted_with_symbol}</p>
-          <Link href={`/products/${product.permalink}`}>
-            <div className={styles.buttonContainer}>
+
+          <div className={styles.buttonContainer}>
+            <Link href={`/products/${product.permalink}`}>
               <button className={styles.infoButton}>Info</button>
-              <button className={styles.buyButton}>Buy</button>
-            </div>
-          </Link>
+            </Link>
+            <button className={styles.buyButton}>Buy</button>
+          </div>
         </ul>
       ))}
     </li>
