@@ -1,0 +1,61 @@
+.cartContainer {
+      height: 100%;
+      width: 100vw;
+      margin-top: 9rem;
+      gap: 20px;
+
+
+}
+
+.cartSub {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+}
+
+.cartMain {
+      margin: auto;
+
+      height: 10rem;
+      width: 40rem;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      background-color: var(--yellow-color)
+}
+
+.total {
+
+      height: calc(1rem + 2vh);
+      width: calc(10rem + 30vw);
+      padding-left: 24vw;
+      margin-left: 13rem;
+}
+
+.cartMain img {
+      height: 10rem;
+      width: 10rem;
+}
+
+.cartMain p {
+      font-size: 0.8rem;
+}
+
+.info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      padding-left: 20px;
+}
+
+.buttonContainer {
+      display: flex;
+      gap: 10px;
+
+}
+
+.buttonContainer button {
+      scale: 0.7;
+}
