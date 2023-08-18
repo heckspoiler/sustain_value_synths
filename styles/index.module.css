@@ -7,4 +7,6 @@
 .shape,
 .sound {
       font-family: "Anti Design";
+      text-shadow: 5px 5px 1px #fa79a6;
+      font-size: 6rem;
 }
