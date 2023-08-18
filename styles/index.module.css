@@ -1,6 +1,6 @@
 .mainTitle {
       margin-left: 10vw;
-      margin-top: calc(2rem + 5vw);
+      margin-top: calc(2rem + 4vw);
       z-index: 2;
 }
 
@@ -9,4 +9,5 @@
       font-family: "Anti Design";
       text-shadow: 5px 5px 1px #fa79a6;
       font-size: 6rem;
+      font-weight: 800;
 }

@@ -23,7 +23,7 @@ export default function Home({ products }) {
         VINTAGE IN <br />
         <span className={styles.shape}>SHAPE</span>
         <br /> AND <br />
-        <span className={styles.sound}>SOUND</span>!
+        <span className={styles.sound}>SOUND!</span>
       </m.h1>
       <News products={products} />
     </div>
