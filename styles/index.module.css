@@ -1,0 +1,10 @@
+.mainTitle {
+      margin-left: 10vw;
+      margin-top: calc(2rem + 5vw);
+      z-index: 2;
+}
+
+.shape,
+.sound {
+      font-family: "Anti Design";
+}

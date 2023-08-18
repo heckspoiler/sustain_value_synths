@@ -1,6 +1,7 @@
 import Background from "../components/index-body/Background";
 import News from "../components/index-body/News/News";
 import commerce from "../lib/commerce";
+import styles from "../styles/index.module.css";
 import { motion as m } from "framer-motion";
 
 export default function Home({ products }) {
@@ -11,17 +12,18 @@ export default function Home({ products }) {
 
   console.log(products);
   return (
-    <div className="bg-pink-main h-screen pt-20">
+    <div className="main-sections bg-pink-main h-screen pt-20 w-screen ">
       <Background />
       <m.h1
-        className="text-7xl text-blue-main w-96 ml-20 text-shadow-lg pt-28 pl-20 text-left z-10 drop-shadow-lg"
+        className={styles.mainTitle}
         initial="hidden"
         animate="visible"
         variants={fadeIn}
       >
         VINTAGE IN <br />
-        <span className="shape">SHAPE</span> AND <br />
-        <span className="sound">SOUND</span>!
+        <span className={styles.shape}>SHAPE</span>
+        <br /> AND <br />
+        <span className={styles.sound}>SOUND</span>!
       </m.h1>
       <News products={products} />
     </div>
