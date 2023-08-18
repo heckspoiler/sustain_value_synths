@@ -1,7 +1,7 @@
 import { useCartState } from "../context/cart";
 
-export default function CartPage() {
-  const { line_items } = useCartState();
+export default function CartPage({ product }) {
+  const state = useCartState();
 
-  return <pre>{JSON.stringify(line_items, null, 2)}</pre>;
+  return <pre>{JSON.stringify(state, null, 2)}</pre>;
 }

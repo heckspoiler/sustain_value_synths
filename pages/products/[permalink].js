@@ -38,6 +38,7 @@ export default function Product({ product }) {
   const addToCart = async () => {
     try {
       const { cart } = await commerce.cart.add(product.id, 1);
+      console.log("Cart from API after addition:", cart);
       setCart(cart);
     } catch (error) {
       console.error("Error adding product to cart:", error);

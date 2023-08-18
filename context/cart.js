@@ -1,5 +1,7 @@
 import { createContext, useReducer, useEffect, useContext } from "react";
-import { commerce } from "../lib/commerce";
+import commerce from "../lib/commerce";
+
+console.log("commerce:", commerce);
 
 const CartStateContext = createContext();
 const CartDispatchContext = createContext();
@@ -32,12 +34,11 @@ export const CartProvider = ({ children }) => {
 
   const getCart = async () => {
     try {
-      const cart = await commerce.cart.retrieve();
-
-      setCart(cart);
-      console.log(cart);
+      const cartResponse = await commerce.cart.retrieve();
+      console.log("API Cart Response:", cartResponse);
+      setCart(cartResponse);
     } catch (error) {
-      console.log(error);
+      console.error("Error retrieving cart:", error);
     }
   };
 
