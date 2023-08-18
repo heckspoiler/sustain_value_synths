@@ -26,11 +26,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/cart.js"
-    ],
-    "/products/[permalink]": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/products/[permalink].js"
     ]
   },
   "ampFirstPages": []
