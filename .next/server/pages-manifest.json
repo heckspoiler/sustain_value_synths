@@ -2,8 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/shop": "pages/shop.js",
   "/cart": "pages/cart.js",
-  "/products/[permalink]": "pages/products/[permalink].js"
+  "/products/[permalink]": "pages/products/[permalink].js",
+  "/": "pages/index.js"
 }

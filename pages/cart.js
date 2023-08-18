@@ -1,25 +1,36 @@
 import { useCartDispatch, useCartState } from "../context/cart";
 import styles from "./cart.module.css";
-
+import { useEffect } from "react";
 import commerce from "../lib/commerce";
 
 function CartItem({ id, name, quantity, line_total, image }) {
   const { setCart } = useCartDispatch();
 
-  const handleUpdateCart = ({ cart }) => setCart(cart);
+  useEffect(() => {
+    console.log("CartItem re-rendered due to quantity change:", quantity);
+  }, [quantity]);
+
+  const handleUpdateCart = (cart) => {
+    console.log("Updated cart data:", cart);
+    setCart(cart);
+  };
 
   const removeItem = () => commerce.cart.remove(id).then(handleUpdateCart);
 
   const decrementQuantity = () => {
-    quantity > 1
-      ? commerce.cart
-          .update(id, { quantity: quantity - 1 })
-          .then(handleUpdateCart)
-      : removeItem();
+    if (quantity > 1) {
+      commerce.cart
+        .update(id, { quantity: quantity - 1 })
+        .then(handleUpdateCart);
+    } else {
+      removeItem();
+    }
   };
 
-  const incrementQuantity = () =>
+  const incrementQuantity = () => {
+    console.log("incrementQuantity Button Clicked");
     commerce.cart.update(id, { quantity: quantity + 1 }).then(handleUpdateCart);
+  };
 
   return (
     <div className={styles.cartMain}>
