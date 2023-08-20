@@ -78,6 +78,9 @@ export default function CartPage() {
           <p className={styles.total}>
             <strong>Sub total:</strong> {subtotal.formatted_with_symbol}
           </p>
+          <div>
+            <button>Proceed to Checkout!</button>
+          </div>
         </div>
       </div>
     </section>
