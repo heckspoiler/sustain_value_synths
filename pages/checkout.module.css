@@ -1,0 +1,73 @@
+.checkoutPage {
+      margin-top: 8rem;
+      height: 100%;
+      width: 100vw;
+
+}
+
+.checkoutFormContainer {
+      width: 80%;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+}
+
+.checkoutFormContainer h2 {
+      font-size: 1.8rem;
+}
+
+.checkoutFormContainer form {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: calc(15rem + 20vw);
+      border: 2px solid var(--blue-color);
+      justify-content: space-around;
+      padding: 20px;
+}
+
+.inputContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+}
+
+.inputContainer label {
+      font-size: 0.8rem;
+      font-family: "Mabry Pro Bold";
+
+}
+
+.checkoutFormContainer form input {
+      width: 60%;
+      padding: 5px;
+      padding-left: 10px;
+      font-size: 0.8rem;
+      background-color: transparent;
+      border: 1px solid var(--blue-color);
+      font-family: "BDO Grotesk";
+      transition: outline 0.2s ease-in-out;
+}
+
+.checkoutFormContainer form input:focus {
+      background-color: var(--pink-color);
+      color: var(--blue-color);
+      outline: 1.5px solid var(--blue-color);
+
+}
+
+.buttonCheckout {
+      width: 40%;
+      align-self: center;
+      background-color: var(--blue-color);
+      color: white;
+
+}
+
+.buttonCheckout:hover {
+      background-color: var(--yellow-color);
+      color: black;
+}
