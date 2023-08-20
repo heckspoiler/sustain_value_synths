@@ -20,11 +20,11 @@ const ShoppingCart = () => {
 
   return (
     <Link href="/cart">
-      <div className="relative">
+      <div className="relative transition-transform transform hover:scale-110 hover:cursor-pointer">
         <img
           src="/icons/shopping-cart.svg"
           alt="Shopping Cart"
-          className="h-8 w-8 transition-transform transform hover:scale-110 hover:cursor-pointer"
+          className="h-8 w-8 "
         />
         {cart.total_items > 0 && (
           <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">

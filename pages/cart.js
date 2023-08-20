@@ -54,20 +54,32 @@ export default function CartPage() {
 
   const isEmpty = line_items.length === 0;
 
-  if (isEmpty) return <p>Your cart is empty</p>;
+  if (isEmpty)
+    return (
+      <section className={styles.cartPage}>
+        <div className={styles.cartContainer}>
+          <h2 className="mt-20 ml-12">Cart</h2>
+          <div className={styles.cartSub}>
+            <h2>Your Cart is empty!</h2>
+          </div>
+        </div>
+      </section>
+    );
 
   return (
-    <div className={styles.cartContainer}>
-      <h2 className="mt-20 ml-12">Cart</h2>
-      <div className={styles.cartSub}>
-        {line_items.map((item) => (
-          <CartItem key={item.id} {...item} />
-        ))}
+    <section className={styles.cartPage}>
+      <div className={styles.cartContainer}>
+        <h2 className="mt-20 ml-12">Cart</h2>
+        <div className={styles.cartSub}>
+          {line_items.map((item) => (
+            <CartItem key={item.id} {...item} />
+          ))}
 
-        <p className={styles.total}>
-          <strong>Sub total:</strong> {subtotal.formatted_with_symbol}
-        </p>
+          <p className={styles.total}>
+            <strong>Sub total:</strong> {subtotal.formatted_with_symbol}
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
