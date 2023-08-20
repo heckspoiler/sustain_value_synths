@@ -4,5 +4,6 @@
   "/_document": "pages/_document.js",
   "/cart": "pages/cart.js",
   "/products/[permalink]": "pages/products/[permalink].js",
+  "/shop": "pages/shop.js",
   "/": "pages/index.js"
 }
