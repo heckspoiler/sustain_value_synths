@@ -40,9 +40,11 @@
 .productDescription button {
       height: 3rem;
       width: calc(5rem + 10vw);
-
+      color: white;
+      background-color: var(--blue-color)
 }
 
 .productDescription button:hover {
-      background-color: var(--yellow-color)
+      background-color: var(--yellow-color);
+      color: black;
 }

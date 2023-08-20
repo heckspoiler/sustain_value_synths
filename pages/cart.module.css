@@ -63,3 +63,26 @@
 .buttonContainer button {
       scale: 0.7;
 }
+
+.buttonContainer button:nth-of-type(1) {
+      background-color: rgb(71, 204, 71);
+}
+
+.buttonContainer button:nth-of-type(2) {
+      background-color: rgb(238, 138, 150);
+}
+
+.buttonContainer button:nth-of-type(3) {
+      background-color: rgb(204, 71, 87);
+      color: white;
+}
+
+.checkOutButton {
+      color: white;
+      background-color: var(--blue-color);
+}
+
+.checkOutButton:hover {
+      color: black;
+      background-color: var(--yellow-color);
+}

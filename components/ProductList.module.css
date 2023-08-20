@@ -29,7 +29,8 @@
 }
 
 .infoButton {
-      background-color: rgb(0, 187, 255);
+      background-color: var(--blue-color);
+      color: white;
 }
 
 .buyButton {

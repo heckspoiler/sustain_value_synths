@@ -24,7 +24,7 @@ export default function Products({ products }) {
   };
   return (
     <m.div
-      className="mt-36 w-100 "
+      className="mt-36 w-100 pb-56"
       initial="hidden"
       animate="visible"
       variants={fadeIn}

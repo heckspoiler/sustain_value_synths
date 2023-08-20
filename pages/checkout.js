@@ -37,7 +37,7 @@ export default function CheckoutPage({
     alert("Order placed successfully!");
 
     // Assuming you have a method in your cartDispatch to clear the cart
-    if (setCart.setCart) {
+    if (setCart) {
       setCart.setCart({});
     }
 

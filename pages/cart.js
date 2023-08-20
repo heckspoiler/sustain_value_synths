@@ -43,7 +43,7 @@ export function CartItem({ id, name, quantity, line_total, image }) {
         <div className={styles.buttonContainer}>
           <button onClick={incrementQuantity}>+</button>
           <button onClick={decrementQuantity}>-</button>
-          <button onClick={removeItem}>&times;</button>
+          {/* <button onClick={removeItem}>DEL</button> */}
         </div>
       </div>
     </div>
@@ -80,7 +80,9 @@ export default function CartPage() {
             <strong>Sub total:</strong> {subtotal.formatted_with_symbol}
           </p>
           <Link href="/checkout">
-            <button>Proceed to Checkout</button>
+            <button className={styles.checkOutButton}>
+              Proceed to Checkout
+            </button>
           </Link>
         </div>
       </div>
