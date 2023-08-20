@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import commerce from "../lib/commerce";
 
-function CartItem({ id, name, quantity, line_total, image }) {
+export function CartItem({ id, name, quantity, line_total, image }) {
   const { setCart } = useCartDispatch();
 
   useEffect(() => {
